@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?><!-- == ============================================================================ 
+	== | WonderTek [ 网络无处不在，沟通及时到达 ] == ============================================================================ 
+	== | Copyright (c) 2015, WonderTek, Inc. All Rights Reserved. == ============================================================================ 
+	== | == ============================================================================ 
+	== | Desc: == ============================================================================ -->
+<root>
+	<header>
+		<script
+			src="http://migu.cmvideo.cn/clt50/publish/clt/resource/miguvideo/common/common.wdml?time=1460617755000" />
+	</header>
+	<body BuildChildrenFinished="bodyBuildChildrenFinished"
+		OnSpriteEvent="bodyOnSpriteEvent" OnPluginEvent="bodyOnPluginEvent"
+		resolution="750,1334">
+		<node name="mainNode" rect="0,0,750,1334" extendstyle="1111"
+			layouttype="1" OnKeyUp="mainNodeOnKeyUp">
+			<shadow rect="0,0,750,1334" color="#eeeeee" alpha="255"
+				extendstyle="1111" />
+			<node rect="0,0,750,100" extendstyle="1010">
+				<shadow rect="0,0,0,0" extendstyle="1077" color="#eeeeee"
+					alpha="255" />
+				<shadow rect="0,0,0,2" extendstyle="1570" color="#d1d1d1"
+					alpha="255" />
+				<button rect="0,0,150,100" style="autosize" OnSelect="backOnSelect"
+					extendstyle="1910" normal="n" sel="s">
+					<image name="n" rect="22,0,23,36" src="file://image/common_back.png"
+						extendstyle="1910" style="autosize" />
+					<image name="s" rect="22,0,23,36" src="file://image/common_back.png"
+						extendstyle="1910" style="autosize" />
+				</button>
+				<label name="title" rect="0,0,750,100" text="" font-size="30"
+					color="#101010" h-align="center" v-align="center" extendstyle="1010" />
+			</node>
+			<node rect="0,100,750,80" extendstyle="1010">
+				<shadow rect="0,0,750,0" color="#ffffff" alpha="155"
+					extendstyle="1077" />
+				<shadow rect="0,0,0,2" extendstyle="1570" color="#d1d1d1"
+					alpha="255" />
+				<list name="siftOptionHead" rect="20,0,500,80" extendstyle="1010"
+					auto-adjust="true" enable="0">
+				</list>
+				<label name="siftState" rect="0,0,690,70" text="展开" font-size="28"
+					color="#333333" h-align="right" v-align="center" extendstyle="1010" />
+				<button name="siftBtn" rect="0,0,105,80" data="" extendstyle="5070"
+					OnSelect="siftBtnOS">
+					<image name="siftImg" rect="0,0,30,30" src="file://image/vipcenter_sift.png"
+						style="autosize" extendstyle="5900" padding="0,15,0,0" />
+				</button>
+			</node>
+			<node rect="0,182,750,500" extendstyle="1010" frame="true">
+				<node name="siftNode" rect="0,0,750,100" extendstyle="1010"
+					visible="1" enable="0">
+					<shadow name="siftShadow" rect="0,0,750,0" color="#f2f2f2"
+						alpha="230" extendstyle="1010" />
+					<list name="siftList" rect="0,0,750,80" direction="horizontal"
+						extendstyle="1010" />                <!--筛选list -->
+				</node>
+			</node>
+			<shadow name="shadow" rect="0,182,0,0" extendstyle="1077"
+				alpha="255" color="#ffffff" />
+			<listview name="mainListview" rect="0,182,0,0" extendstyle="1077"
+				auto-adjust="true" visible="0" />
+			<node name="tipsNode" rect="0,0,750,1334" extendstyle="1111" />
+		</node>
+		<node name="itemNode" rect="0,0,0,0" visible="0" enable="0"
+			active="0" extendstyle="1010">
+			<node name="contListviewItem" rect="0,0,750,340" extendstyle="1010">
+				<list name="subList" rect="0,0,750,0" extendstyle="1010" />
+			</node>        <!--左图右文 -->
+			<node name="contItemWide" rect="0,0,750,198" extendstyle="1010">
+				<button name="contBtn" rect="0,0,0,0" sel="s" extendstyle="1077"
+					OnSelect="detailOnSelect" />
+				<node name="leftNode" rect="22,28,245,142" extendstyle="1010">
+					<shadow rect="0,0,245,142" color="#f4f4f4" alpha="255"
+						extendstyle="0077">
+						<image name="defaultIcon" rect="0,0,140,36" style="autosize"
+							src="file://image/default.png" extendstyle="9900"
+							BuildChildrenFinished="resChoose">
+							<node />
+						</image>
+					</shadow>
+					<image name="bannerImage" rect="0,0,245,142" extendstyle="0077"
+						src="" style="minsize" alphaeffect="1" />
+				</node>
+				<label name="contname" rect="287,28,385,40" extendstyle="1010"
+					text="" postfix="." color="#101010" font-size="28" />
+				<textarea name="contdesc" rect="287,68,385,0" extendstyle="1010"
+					text="" color="#949494" autoextend="true" line-height="33"
+					font-size="24" maxlines="2" />
+				<label name="prop2" rect="287,150,360,35" font-size="24"
+					color="#949494" text="dsfdf" extendstyle="1010" />
+				<shadow rect="0,198,750,1" color="#cccccc" alpha="255"
+					extendstyle="1514" />
+			</node>
+			<node name="contItemV" rect="0,0,242,392" extendstyle="1010">
+				<node rect="0,10,242,304" extendstyle="0007">
+					<node name="bannerNode" rect="0,0,226,304" extendstyle="5000">
+						<shadow name="imgBg" rect="0,0,0,0" color="#f4f4f4" alpha="255"
+							extendstyle="9977">
+							<image name="defaultIcon" rect="0,0,140,36" style="autosize"
+								src="file://image/default.png" extendstyle="9900"
+								BuildChildrenFinished="resChoose">
+								<node />
+							</image>
+						</shadow>
+						<image name="bannerImage" rect="0,0,0,0" extendstyle="1077"
+							src="" style="autosize" alphaeffect="1" />
+						<node rect="0,0,226,304" extendstyle="1077">
+							<image name="freetip" rect="0,-4,108,32" style="autosize"
+								src="file://image/salefree.png" extendstyle="0000" visible="0" />
+						</node>
+						<button name="contBtn" rect="0,0,226,304" extendstyle="0000"
+							sel="s" OnSelect="detailOnSelect" />
+					</node>
+					<textarea name="contname" rect="20,314,226,78" autoextend="true"
+						text="" v-align="center" extendstyle="1010" font-size="26" color="#101010"
+						maxlines="2" line-height="34" />
+				</node>
+			</node>
+			<node name="contItemH" rect="0,0,364,257" extendstyle="1010">
+				<node rect="0,0,364,257" extendstyle="9000">
+					<node name="bannerNode" rect="20,10,344,206" extendstyle="5000">
+						<shadow name="imgBg" rect="0,0,344,206" color="#f4f4f4"
+							alpha="255" extendstyle="9000">
+							<image name="defaultIcon" rect="0,0,140,36" style="autosize"
+								src="file://image/default.png" extendstyle="9900"
+								BuildChildrenFinished="resChoose">
+								<node />
+							</image>
+						</shadow>
+						<image name="bannerImage" rect="0,0,344,206" extendstyle="9000"
+							src="" style="autosize" alphaeffect="1" />
+						<node rect="0,0,226,304" extendstyle="1077">
+							<image name="freetip" rect="0,-4,108,32" style="autosize"
+								src="file://image/salefree.png" extendstyle="0000" visible="0" />
+						</node>
+						<button name="contBtn" rect="0,0,344,206" extendstyle="0000"
+							sel="s" OnSelect="detailOnSelect">
+						</button>
+					</node>
+					<label name="contname" rect="20,215,330,40" extendstyle="1010"
+						text="" postfix=".." color="#646464" v-align="center" h-align="left"
+						font-size="28" />
+				</node>
+			</node>
+			<node name="contItemH2" rect="0,0,350,310" extendstyle="1010">
+				<node rect="0,14,330,225" extendstyle="9000">
+					<shadow name="imgBg" rect="0,0,330,215" color="#EBEBEB"
+						alpha="255" extendstyle="0000">
+						<image name="defaultIcon" rect="0,0,105,145" style="autosize"
+							src="file://image/icon_default.png" extendstyle="9900"
+							BuildChildrenFinished="resChoose">
+							<node />
+						</image>
+					</shadow>
+					<image name="bannerImage" rect="0,0,330,215" extendstyle="0000"
+						src="" style="autosize" alphaeffect="1">
+						<shadow name="propNode" rect="0,0,330,50" color="#000000"
+							alpha="155" extendstyle="0570">
+							<label name="prop" rect="5,0,220,50" extendstyle="0007"
+								text="" postfix=".." color="#FFFFFF" v-align="center" font-size="24" />
+							<label name="prop2" rect="0,0,325,50" extendstyle="0007"
+								text="" color="#FFFFFF" v-align="center" h-align="right"
+								font-size="24" />
+						</shadow>
+					</image>
+					<node rect="0,0,226,304" extendstyle="1077">
+						<image name="freetip" rect="0,-4,108,32" style="autosize"
+							src="file://image/salefree.png" extendstyle="0000" visible="0" />
+					</node>
+					<button name="contBtn" rect="0,0,330,225" extendstyle="0000"
+						sel="s" OnSelect="detailOnSelect">
+						<shadow name="s" rect="0,0,330,225" color="#000000" alpha="40"
+							extendstyle="0000" />
+					</button>
+					<textarea name="contname" rect="0,222,330,80" color="#646464"
+						line-height="36" font-size="26" text="" extendstyle="0070"
+						autoextend="true" maxlines="2" />
+				</node>
+			</node>
+			<node name="contItemLive" rect="0,0,750,160" extendstyle="1010">
+				<button name="contBtn" rect="0,0,750,160" sel="f"
+					extendstyle="1010" OnSelect="detailOnSelect">
+					<shadow name="f" rect="0,0,750,195" color="#000000" alpha="20"
+						extendstyle="1010" />
+				</button>
+				<node rect="30,15,165,120" extendstyle="0000">
+					<shadow rect="0,0,165,120" color="#EBEBEB" alpha="255"
+						padding="0,7,7,0" extendstyle="0066" />
+					<image name="defaultIcon" rect="0,0,63,87" style="autosize"
+						src="file://image/icon_default.png" extendstyle="9900"
+						BuildChildrenFinished="resChoose">
+						<node />
+					</image>
+					<image name="bannerImage" rect="0,0,165,120" extendstyle="0077"
+						src="" style="autosize" alphaeffect="1" />
+					<image name="iconTip" rect="8,8,60,60" style="autosize" src=""
+						extendstyle="0000" visible="0" />
+				</node>
+				<label name="contname" rect="230,18,470,50" extendstyle="1010"
+					postfix=".." text="" font-size="28" color="#565656" />
+				<node rect="230,80,470,50" extendstyle="1010">
+					<label name="prop" rect="0,0,470,50" extendstyle="1010"
+						postfix=".." text="" font-size="26" color="#817B7B" />
+				</node>
+				<shadow rect="0,0,750,1" color="#cccacb" alpha="255"
+					extendstyle="1514" />
+			</node>
+			<node name="siftListItem" rect="0,0,700,80" extendstyle="1010">
+				<node name="tagNode" rect="0,0,0,0" extendstyle="1010" />
+				<label name="tagName" rect="0,0,120,70" color="#333333"
+					font-size="28" v-align="center" h-align="center" extendstyle="1010" />
+				<listview name="siftOptionListview" rect="120,0,580,80"
+					extendstyle="1010" direction="horizontal" limit="true" />
+			</node>        <!--筛选项布局 -->
+			<node name="optItem" rect="0,0,0,70" extendstyle="0000">
+				<button name="optBtn" rect="0,0,0,70" normal="n" disabled="d"
+					extendstyle="0000" OnSelect="optBtnOS">
+					<node name="n" rect="0,0,0,70" extendstyle="0000">
+						<label name="lbln" rect="0,0,0,70" color="#333333"
+							font-size="28" autoextend="true" v-align="center" h-align="center"
+							extendstyle="1010" />
+					</node>
+					<node name="d" rect="0,0,0,70" extendstyle="0000">
+						<image name="ic" rect="0,0,0,70" src="file://image/chan_n.png"
+							style="sudoku-auto" sudoku="2,2,2,2" extendstyle="9910" />
+						<label name="lbld" rect="0,0,0,70" color="#f19411"
+							font-size="28" autoextend="true" v-align="center" h-align="center"
+							extendstyle="1010" />
+					</node>
+				</button>
+			</node>
+		</node>
+	</body>
+</root>

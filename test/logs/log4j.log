@@ -1,0 +1,4 @@
+2016-06-08 15:53:54  [ main:1 ] - [ DEBUG ]  this is a debut
+2016-06-08 15:53:54  [ main:2 ] - [ ERROR ]  error
+2016-06-08 16:03:49  [ main:0 ] - [ DEBUG ]  this is a debug
+2016-06-08 16:03:49  [ main:0 ] - [ ERROR ]  error

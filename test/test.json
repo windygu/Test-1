@@ -1,0 +1,37 @@
+{
+	"liveList":[
+		
+	],
+	"requstParam":"{res=HDPI,nt=5,playerType=4,imei=0b5714975d0739fb5d6693e22d2137b385409b4d72c92ea8e871666b46470328,cid=238,clientId=3749216881795,contentId=614999925,sdkVersion=22.00.02.01,nodeId=,objType=video,token=596e8df4e948e8013464b1973c6878d1,st=3730,filterType=1}",
+	"sysDate":"20160824155449",
+	"name":"张震讲故事之鬼迷心窍",
+	"param":"contentId=614999925;nodeId=;objType=video;",
+	"img":"http://wapx.cmvideo.cn:8080/publish/poms/image/3010/998/686/800033_HSJ1080V.jpg",
+	"himg":"http://wapx.cmvideo.cn:8080/publish/poms/image/3010/998/686/800033_HSJ1080H.jpg",
+	"keywords":"0",
+	"desc":"男主角钟宇一直暗恋女主角晓来，却不幸遭钟宇的师傅插足。紧接着，鬼影、幻想、失踪、绑架等恐怖事件袭来，谁是操控者，或者这些事件因何而生，没有人知道。",
+	"fileLength":"4969",
+	"contvisit":"383240410",
+	"creator":"徐正超",
+	"actors":"张俪|孔维|张翰|张皓然|范植伟",
+	"score":"3.5",
+	"state":"更新至集",
+	"contType":"1",
+	"downloadSupportRate":"rate6=63_10;rate5=56_10;rate4=55_10;rate3=54_10;rate2=;rate1=;",
+	"way":"3",
+	"sportMask":"0",
+	"isOlympic":"0",
+	"contList":[
+		{
+			"name":"张震讲故事之鬼迷心窍",
+			"param":"contentId=614999925;nodeId=;objType=video;",
+			"img":"http://wapx.cmvideo.cn:8080/publish/poms/image/3010/998/686/800033_HSJ1080H.jpg",
+			"fileLength":"",
+			"mediaSize":"size6=1556188359;size5=748483476;size4=382595606;size3=220498609;size2=;size1=;",
+			"prevue":""
+			
+		}
+		
+	]
+	
+}
