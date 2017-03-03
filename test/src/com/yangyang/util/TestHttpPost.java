@@ -13,11 +13,6 @@ import java.util.Map.Entry;
 
 public class TestHttpPost {
 
-	public static void main(String[] args) {
-		ReadByPost("http://userlive.youku.com/live/play", 
-				"user_id=946264524&device=pc");
-	}
-
 	public static String ReadByPost(String urlStr, String query) {
 		return ReadByPost(urlStr, query, "utf8");
 	}
