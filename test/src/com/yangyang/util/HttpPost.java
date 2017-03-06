@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class TestHttpPost {
+public class HttpPost {
 
 	public static String ReadByPost(String urlStr, String query) {
 		return ReadByPost(urlStr, query, "utf8");

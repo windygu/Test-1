@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import com.yangyang.util.TestHttpGet;
+import com.yangyang.util.HttpGet;
 
 public class M3U8 {
 
@@ -18,7 +18,7 @@ public class M3U8 {
 
 	public static ArrayList<String> m3u8Parser(String m3u8_url) {
 		ArrayList<String> list_ts = new ArrayList<String>();
-		String m3u8 = TestHttpGet.ReadByGet(m3u8_url);
+		String m3u8 = HttpGet.ReadByGet(m3u8_url);
 		byte[] by = m3u8.getBytes();
 		//解析m3u8文件  
 		try 
